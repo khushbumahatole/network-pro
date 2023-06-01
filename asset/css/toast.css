@@ -1,0 +1,28 @@
+.toast-container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  .toastify{
+    width: 400px;
+    color: white;
+    position: relative;
+  }
+  
+  .toastify::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color:red;
+    height: 10px;
+    width: 100%;
+    animation: rev 5s;
+  }
+  @keyframes rev{
+    100%{
+      width: 0%;
+    }
+  }
